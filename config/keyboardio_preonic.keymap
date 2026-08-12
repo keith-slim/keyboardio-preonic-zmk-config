@@ -12,6 +12,35 @@
         zmk,physical-layout = &ortho_layout;
     };
 
+    // ── Bluetooth切り替えと同時にLEDインジケータを連動させるカスタムマクロ定義 ──
+    macros {
+        bt_0: bt_0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 0>;
+        };
+        bt_1: bt_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 1>;
+        };
+        bt_2: bt_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 2>;
+        };
+        bt_3: bt_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 3>;
+        };
+        bt_4: bt_4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&bt BT_SEL 4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -69,14 +98,14 @@
         };
 
         // ==========================================
-        // レイヤー 3 : システム・メディア（Function）レイヤー
+        // レイヤー 3 : システム・メディア（Function）レイヤー 【LEDマクロ適用】
         // ==========================================
         func_layer {
             label = "Function";
             bindings = <
  &trans      &trans      &trans
 
- &out OUT_TOG &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans      &trans      &trans      &trans      &trans      &trans
+ &out OUT_TOG &bt_0        &bt_1        &bt_2        &bt_3        &bt_4        &trans      &trans      &trans      &trans      &trans      &trans
  &trans      &trans      &kp C_VOL_UP &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
  &trans      &kp C_PREV  &kp C_VOL_DN &kp C_NEXT  &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans
  &trans      &trans      &kp C_MUTE  &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans      &trans

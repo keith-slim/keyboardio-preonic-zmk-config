@@ -27,9 +27,9 @@
             label = "Base";
             bindings = <
  &trans      &mo 3       &kp C_PP
- &kp ESC     &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BKSP
- &kp GRAVE   &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp MINUS
- &kp TAB     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp ENTER
+ &kp GRAVE   &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &kp BKSP
+ &kp TAB     &kp Q       &kp W       &kp E       &kp R       &kp T       &kp Y       &kp U       &kp I       &kp O       &kp P       &kp MINUS
+ &kp ESC     &kp A       &kp S       &kp D       &kp F       &kp G       &kp H       &kp J       &kp K       &kp L       &kp SEMI    &kp ENTER
  &kp LSHFT   &kp Z       &kp X       &kp C       &kp V       &kp B       &kp N       &kp M       &kp COMMA   &kp PERIOD  &kp UP      &kp EXCL
  &kp LCTRL   &kp LGUI    &kp LALT    &mo 3       &mo 1       &kp SPACE         &kp DEL     &mo 2       &kp SLASH   &kp LEFT    &kp DOWN    &kp RIGHT
             >;
